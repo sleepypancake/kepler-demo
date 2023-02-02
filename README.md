@@ -5,3 +5,8 @@
 [Live demo](https://maryzam.github.io/kepler.gl-usage-demo/)
 
 License: **MIT**
+
+### Preview app
+```
+npm start
+```

@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 
 import keplerGlReducer from 'kepler.gl/reducers';
+import {LOCALE_CODES} from 'kepler.gl/localization';
+
 
 import { REQUEST_PARKING_DATA, GET_PARKING_DATA, SET_MAP_MODE } from './actions';
 import { MAP_MODE } from '../configs/map';
@@ -31,7 +33,8 @@ const appReducer = combineReducers({
 const mapReducer = keplerGlReducer
 	.initialState({
 		uiState: {
-	      readOnly: true,
+		  readOnly: true,
+		  locale: LOCALE_CODES.ru,
 	      mapControls: {
 	        visibleLayers: {
 	          show: false
